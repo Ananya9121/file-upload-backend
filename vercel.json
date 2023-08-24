@@ -1,14 +1,14 @@
 {
     "version": 2,
     "env": {
-        "DB_URI": "@DB_URI",
-        "FRONT_END_URL":"@FRONT_END_URL",
-        "JWT_SECRET":"@JWT_SECRET",
-"JWT_EXPIRES":"JWT_EXPIRES",
-"FILE_UPLOAD_BUCKET":"@FILE_UPLOAD_BUCKET",
-"S3_ACCESS_KEY":"@S3_ACCESS_KEY",
-"S3_SECRET_KEY":"@S3_SECRET_KEY",
-"PORT":"@PORT"
+        "DB_URI": "@Ddb_uri",
+        "FRONT_END_URL":"@front-end-url",
+        "JWT_SECRET":"@jwt_secret",
+"JWT_EXPIRES":"jwt_expires",
+"FILE_UPLOAD_BUCKET":"@file_upload_bucket",
+"S3_ACCESS_KEY":"@s3_access_key",
+"S3_SECRET_KEY":"@s3_secret_key",
+"PORT":"@port"
     },
     "builds": [
         {
