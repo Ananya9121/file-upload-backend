@@ -1,7 +1,7 @@
 {
     "version": 2,
     "env": {
-        "DB_URI": "@Ddb_uri",
+        "DB_URI": "@db_uri",
         "FRONT_END_URL":"@front_end_url",
         "JWT_SECRET":"@jwt_secret",
 "JWT_EXPIRES":"jwt_expires",
