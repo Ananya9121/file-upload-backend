@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "f9783ac9-3f62-4231-be05-96d9409d5de2",
+		"name": "Farmart",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20611485"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "sign-up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"anu425\",\r\n    \"email\": \"anu1245@gmail.com\",\r\n    \"password\": \"hello1245\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fine-plum-deer-boot.cyclic.cloud/auth/signup",
+							"protocol": "https",
+							"host": [
+								"fine-plum-deer-boot",
+								"cyclic",
+								"cloud"
+							],
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTZkZDc5MDFjYmNlNjNlZTllMDVlZSIsImlhdCI6MTY5Mjg3MTU4NSwiZXhwIjoxNjkyOTU3OTg1fQ.Zc6d8pNozt6TTs6bAKCVmg9ExqwHlOQQouHwCDEh_ns",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"anu1245@gmail.com\",\r\n    \"password\": \"hello1245\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fine-plum-deer-boot.cyclic.cloud/auth/login",
+							"protocol": "https",
+							"host": [
+								"fine-plum-deer-boot",
+								"cyclic",
+								"cloud"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user file",
+			"item": [
+				{
+					"name": "upload file",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTZkZDc5MDFjYmNlNjNlZTllMDVlZSIsImlhdCI6MTY5Mjg3MTU4NSwiZXhwIjoxNjkyOTU3OTg1fQ.Zc6d8pNozt6TTs6bAKCVmg9ExqwHlOQQouHwCDEh_ns",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/91930/Desktop/photo-1472457897821-70d3819a0e24.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://fine-plum-deer-boot.cyclic.cloud/userFileUpload/upload",
+							"protocol": "https",
+							"host": [
+								"fine-plum-deer-boot",
+								"cyclic",
+								"cloud"
+							],
+							"path": [
+								"userFileUpload",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "gell all files",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTZkZDc5MDFjYmNlNjNlZTllMDVlZSIsImlhdCI6MTY5Mjg3NDExMiwiZXhwIjoxNjkyOTYwNTEyfQ.jxu75Bd7Hd6n4rX2GzfVWdjrrD11wf1q3g7wz8pfkSc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fine-plum-deer-boot.cyclic.cloud/userFileUpload/",
+							"protocol": "https",
+							"host": [
+								"fine-plum-deer-boot",
+								"cyclic",
+								"cloud"
+							],
+							"path": [
+								"userFileUpload",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "redirect url",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTZkZDc5MDFjYmNlNjNlZTllMDVlZSIsImlhdCI6MTY5Mjg3MTU4NSwiZXhwIjoxNjkyOTU3OTg1fQ.Zc6d8pNozt6TTs6bAKCVmg9ExqwHlOQQouHwCDEh_ns",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fine-plum-deer-boot.cyclic.cloud/userFileUpload/WK6pZ8Ks",
+							"protocol": "https",
+							"host": [
+								"fine-plum-deer-boot",
+								"cyclic",
+								"cloud"
+							],
+							"path": [
+								"userFileUpload",
+								"WK6pZ8Ks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete file",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTZkZDc5MDFjYmNlNjNlZTllMDVlZSIsImlhdCI6MTY5Mjg3NDExMiwiZXhwIjoxNjkyOTYwNTEyfQ.jxu75Bd7Hd6n4rX2GzfVWdjrrD11wf1q3g7wz8pfkSc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://fine-plum-deer-boot.cyclic.cloud/userFileUpload/deleteFile/64e7369ed899b2316bb8c614",
+							"protocol": "https",
+							"host": [
+								"fine-plum-deer-boot",
+								"cyclic",
+								"cloud"
+							],
+							"path": [
+								"userFileUpload",
+								"deleteFile",
+								"64e7369ed899b2316bb8c614"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
